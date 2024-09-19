@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+body header {
+  background-color: #33a474;
+  color: white;
+  padding: 40px 0;
+  padding-top: 100px;
+  margin-bottom: 30px;
+}
+body header h1 {
+  text-align: center;
+  line-height: 2em;
+}
+body header p {
+  text-align: center;
+  line-height: 2em;
+}
+body main section {
+  text-align: center;
+  margin: 40px 0;
+  transition: all 0.2s;
+  vertical-align: middle;
+}
+body main section p.content {
+  font-size: 20px;
+  line-height: 2em;
+  font-weight: bolder;
+  color: #576071;
+}
+body main section .input-area {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  /* 水平方向排列 */
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中 */
+}
+body main section .input-area .describe {
+  display: inline;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0 5px;
+  color: #9b9faa;
+}
+body main section .input-area .describe.agree {
+  color: #33a474;
+}
+body main section .input-area .describe.disagree {
+  color: #88619a;
+}
+body main section .input-area .buttons {
+  display: inline-flex;
+  flex-direction: row;
+  /* 默认值是 row，可以省略 */
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中 */
+  height: 100px;
+  line-height: 100px;
+}
+body main section .input-area .buttons button {
+  min-width: 50px;
+  min-height: 50px;
+  line-height: 100px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: solid 3px;
+  background-color: transparent;
+  transition: all 0.1s;
+}
+body main section .input-area .buttons .activate {
+  box-shadow: 0 0 10px;
+}
+body main section .input-area .buttons .button-0,
+body main section .input-area .buttons .button-1,
+body main section .input-area .buttons .button-2 {
+  color: #33a474;
+}
+body main section .input-area .buttons .button-0:hover,
+body main section .input-area .buttons .button-1:hover,
+body main section .input-area .buttons .button-2:hover {
+  background-color: #33a474;
+}
+body main section .input-area .buttons .button-0.activate,
+body main section .input-area .buttons .button-1.activate,
+body main section .input-area .buttons .button-2.activate {
+  background-color: #33a474;
+}
+body main section .input-area .buttons .button-4,
+body main section .input-area .buttons .button-5,
+body main section .input-area .buttons .button-6 {
+  color: #88619a;
+}
+body main section .input-area .buttons .button-4:hover,
+body main section .input-area .buttons .button-5:hover,
+body main section .input-area .buttons .button-6:hover {
+  background-color: #88619a;
+}
+body main section .input-area .buttons .button-4.activate,
+body main section .input-area .buttons .button-5.activate,
+body main section .input-area .buttons .button-6.activate {
+  background-color: #88619a;
+}
+body main section .input-area .buttons .button-3 {
+  color: #9b9faa;
+}
+body main section .input-area .buttons .button-3:hover {
+  background-color: #9b9faa;
+}
+body main section .input-area .buttons .button-3.activate {
+  background-color: #9b9faa;
+}
+body main section .input-area .buttons .button-0,
+body main section .input-area .buttons .button-6 {
+  transform: scale(1);
+}
+body main section .input-area .buttons .button-1,
+body main section .input-area .buttons .button-5 {
+  transform: scale(0.85);
+}
+body main section .input-area .buttons .button-2,
+body main section .input-area .buttons .button-4 {
+  transform: scale(0.7);
+}
+body main section .input-area .buttons .button-3 {
+  transform: scale(0.55);
+}
+body button.submit {
+  display: block;
+  margin: 20px auto;
+  margin-bottom: 60px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: #b4bcc4; /* 深蓝色背景 */
+  color: white; /* 白色文字 */
+  border: none; /* 移除默认边框 */
+  cursor: pointer; /* 鼠标悬浮时显示手型 */
+  transition: background-color 0.3s, box-shadow 0.3s; /* 添加过渡效果 */
+  font-weight: bold
+}
+body button.submit:hover {
+  background-color: #bccad3; /* 浅蓝色背景 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 阴影效果 */
+}
+body article.result {
+  width: 60%;
+  margin: 0 auto;
+}
+body article.result h2,
+body article.result h4 {
+  text-align: center;
+  line-height: 2em;
+}
+body article.result h3 {
+  line-height: 2em;
+}
+body article.result p {
+  margin-bottom: 2em;
+}
+body article.result .range-area {
+  text-align: center;
+}
+body article.result .range-area p {
+  line-height: 1.5em;
+  margin: 0;
+}
+body article.result .range-area p span {
+  font-weight: bolder;
+}
+body article.result .range-area p span.left {
+  color: #88619a;
+}
+body article.result .range-area p span.right {
+  color: #33a474;
+}
+body article.result .range-area div {
+  height: 1em;
+  width: 25%;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+  text-align: left;
+  overflow: hidden;
+  background: black;
+}
+body article.result .range-area div span {
+  height: 1em;
+  display: block;
+  float: left;
+  filter: blur(5px) brightness(1.5);
+}
+body article.result .range-area div span.left {
+  background-color: #88619a;
+}
+body article.result .range-area div span.right {
+  background-color: #33a474;
+}
+body article.result .final,
+body article.result .potential,
+body article.result .easter-egg {
+  width: 100%;
+}
+body article.result .final img,
+body article.result .potential img,
+body article.result .easter-egg img {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+}
+@media (max-width: 480px) {
+  body main section p {
+    padding: 0 5px;
+  }
+  body main section .input-area .buttons button {
+    margin: 0 2px;
+    min-width: 25px;
+    min-height: 25px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  body main section p {
+    padding: 0 5px;
+  }
+  body main section .input-area .buttons button {
+    margin: 0 2px;
+    min-width: 25px;
+    min-height: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body main section .input-area .buttons button {
+    margin: 0 2px;
+    min-width: 25px;
+    min-height: 25px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
+
+/* Dawn */
+.result {
+    display: none; /* 初始状态下隐藏 */
+    padding: 20px;
+    border-radius: 90px; /* 圆滑的边框 */
+    border: 10px solid; /* 边框宽度 */
+    border-image: linear-gradient(to right, green, purple) 10; /* 绿色和紫色的渐变色 */
+    background-color: #f9f9f9; /* 背景颜色 */
+    margin: 60px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* 文字颜色 */
+	font-weight: bold
+}
