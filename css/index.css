@@ -252,7 +252,7 @@ body article.result .easter-egg img {
 .result {
     display: none; /* 初始状态下隐藏 */
     padding: 20px;
-    border-radius: 90px; /* 圆滑的边框 */
+    border-radius: 0px; /* 圆滑的边框 */
     border: 10px solid; /* 边框宽度 */
     border-image: linear-gradient(to right, green, purple) 10; /* 绿色和紫色的渐变色 */
     background-color: #f9f9f9; /* 背景颜色 */
