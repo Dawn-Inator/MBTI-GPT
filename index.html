@@ -21,9 +21,11 @@
       <p>尝试发掘自己的学习潜力，看看自己更擅长学哪个方面。</p>
     </header>
 
-    <!-- 题目 -->
-    <main></main>
-    <button class="submit">查看结果</button>
+    <!-- 加载器 -->
+	<div id="loading-indicator"></div>
+	<!-- 题目 -->
+    <main id="question-container"></main>
+    <button class="submit" id="submit-button">查看结果</button>
 	<article class="result" style="display: none">
 	</article>
 	<br>
@@ -58,6 +60,7 @@
 	
   </body>
   <script src="./js/static.js"></script>
+  <script src="./js/series.js"></script>
   <script src="./js/question.js"></script>
   <script src="./js/llm.js"></script>
   <script src="./js/index.js"></script>

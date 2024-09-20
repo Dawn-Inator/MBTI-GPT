@@ -1,7 +1,3 @@
-/**
- * 题目类
- *
- */
 class Question {
   constructor(staticObject) {
     // 题目
@@ -44,7 +40,7 @@ class Question {
       btn.classList.add(`button-${i}`);
       btn.onclick = () => {
         this.currentValue = -(i - 3); // 左侧同意，右侧反对
-		this.staticObject.chosen = this.currentValue;
+        this.staticObject.chosen = this.currentValue;
         // 修改样式
         for (let otherBtn of buttonList.children) {
           otherBtn.classList.remove("activate");
